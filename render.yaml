@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: restaurant-backend
+    env: node
+    rootDirectory: .
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+    plan: free
+    # Set envVars in the Render Dashboard or use secrets manager; do not commit secrets here
+    # envVars:
+    #   - key: MONGODB_URI
+    #     sync: false
